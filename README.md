@@ -1,24 +1,62 @@
-# Expo Router Example
+# Job Search App
 
-Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
+A mobile job search app built with React Native and Expo Router. It lets users browse popular jobs, view nearby jobs, and search for openings by keyword or category.
 
-## Launch your own
+## Features
 
-[![Launch with Expo](https://github.com/expo/examples/blob/master/.gh-assets/launch.svg?raw=true)](https://launch.expo.dev/?github=https://github.com/expo/examples/tree/master/with-router)
+- Home screen with featured job sections
+- Job search by keyword
+- Popular jobs and nearby jobs listings
+- Job details and search result pages
+- File-based navigation with Expo Router
 
-## 🚀 How to use
+## Tech Stack
+
+- React Native
+- Expo
+- Expo Router
+- Axios
+- React Native Gesture Handler
+- React Native Screens
+
+## Getting Started
+
+1. Clone the repository and open the project folder.
+
+2. Install dependencies:
 
 ```sh
-npx create-expo-app -e with-router
+npm install
 ```
 
-## Deploy
+3. Start the app:
 
-Deploy on all platforms with Expo Application Services (EAS).
+```sh
+npm.cmd start
+```
 
-- Deploy the website: `npx eas-cli deploy` — [Learn more](https://docs.expo.dev/eas/hosting/get-started/)
-- Deploy on iOS and Android using: `npx eas-cli build` — [Learn more](https://expo.dev/eas)
+4. If Metro gets stuck or shows stale errors, clear the cache and restart:
 
-## 📝 Notes
+```sh
+npm.cmd start -- --clear
+```
 
-- [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
+5. Use the Expo Go app to scan the QR code shown in the terminal, or press `w` to open the web version.
+
+## Run on Device
+
+- Scan the QR code with Expo Go on Android or iPhone
+- Press `w` to open the web version
+
+## Project Structure
+
+- `app/` - App routes and screens
+- `components/` - Reusable UI components
+- `constants/` - Colors, icons, images, and theme values
+- `hook/` - Custom hooks like job fetching
+- `assets/` - Fonts, images, and icons
+
+## Notes
+
+- This project uses Expo Router for navigation.
+- Job data is fetched from the JSearch API through Axios.
