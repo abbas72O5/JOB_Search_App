@@ -1,9 +1,9 @@
 import { useState,useEffect } from "react";
 import axios from 'axios'
 
-export default useFetch= (endpoint,query )=>{
+export default function useFetch(endpoint, query) {
     const[data,setData]= useState([]);
-    const[isLoading,setIsLoading]= useState(false);
+  const[isLoading,setIsLoading]= useState(true);
     const [error,setError] = useState(null);
 
     
